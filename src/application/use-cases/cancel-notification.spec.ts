@@ -5,7 +5,7 @@ import { CancelNotification } from './cancel-notification';
 import { NotificationNotFound } from './errors/notification-not-found';
 
 describe('Cancel Notification', () => {
-  it('should be able to create a notification', async () => {
+  it('should be able to cancel a notification', async () => {
     const notificationsRepository = new InMemoryNotificationsRepository();
     const cancelNotification = new CancelNotification(notificationsRepository);
 
